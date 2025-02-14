@@ -1,0 +1,27 @@
+{
+  "name": "@nuvexa/eslint-config",
+  "version": "1.0.0",
+  "description": "A reusable ESLint configuration that enforces consistent JavaScript code styles across projects. Easily extendable and configurable to fit any framework or environment, with built-in support for modern ECMAScript syntax, ES modules, and best practices.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@eslint/js": "^9.20.0",
+    "eslint": "^9.20.1",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-promise": "^7.2.1",
+    "globals": "^15.15.0"
+  },
+  "peerDependencies": {
+    "eslint": "^9.20.1"
+  }
+}
