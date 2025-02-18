@@ -11,11 +11,7 @@ const recommendedConfigs = [
       globals: globals.browser,
       ecmaVersion: "latest",
       sourceType: "module",
-      parserOptions: {
-        ecmaFeatures: {
-          impliedStrict: true,
-        },
-      },
+      parserOptions: { ecmaFeatures: { impliedStrict: true } },
     },
     linterOptions: {
       reportUnusedDisableDirectives: "error",
@@ -98,17 +94,10 @@ const recommendedConfigs = [
 ];
 
 const configs = {
-  recommended: [
-    ...recommendedConfigs,
-    {
-      name: "eslint-config-recommended",
-    },
-  ],
+  recommended: [...recommendedConfigs, { name: "eslint-config-recommended" }],
   strict: [
     ...recommendedConfigs,
-    {
-      name: "eslint-config-strict",
-    },
+    { name: "eslint-config-strict" },
     {
       rules: {
         "no-console": "error",
